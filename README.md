@@ -1,5 +1,6 @@
 # rock-paper-scissors
 Author: Nathan Jack Luna
+
 IDE Used: Visual Studio Code
 
 This is an Odin Project assignment, where I will create a simple rock-paper-scissors game
