@@ -4,21 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Importing CSS and Montserrat Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Importing JavaScript File -->
     <script defer src="./main.js"></script>
 
     <title>Rock Paper Scissors | SunnyFGC</title>
 </head>
 <body>
-    <h1 class="title">Rock Paper Scissors</h1>
-    
-    <h2 class="rounds">Round 1</h2>
-    <h3 class="player-score">Player: 0</h3>
-    <h3 class="computer-score">Computer: 0</h3>
+    <div class="wrapper">
+        <h1 class="title">Rock Paper Scissors</h1>
+        
+        <h2 class="rounds">Round 1</h2>
 
-    <div class="container">
-        <button class="rock-button">Rock</button>
-        <button class="paper-button">Paper</button>
-        <button class="scissors-button">Scissors</button>
+        <div class="score-row"> 
+            <h3 class="player-score">Player: 0</h3>
+            <h3 class="computer-score">Computer: 0</h3>
+        </div>
+
+        <div class="button-container">
+            <button class="rock-button">Rock</button>
+            <button class="paper-button">Paper</button>
+            <button class="scissors-button">Scissors</button>
+        </div>
+    </div>    
+
+    <div class="attribution">
+        If you're interested, check out my <a href="https://github.com/njmoon21" target="_blank" rel="noreferrer">GitHub!</a>
     </div>
+
 </body>
 </html>

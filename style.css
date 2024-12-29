@@ -1,0 +1,136 @@
+/* Josh Comeau's CSS Reset */
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+:root {
+    --ff-montserrat: 'Montserrat', sans-serif;
+    --fw-700: 700;
+    --fw-600: 600;
+    --fw-500: 500;
+}
+
+body{
+    font-family: var(--ff-montserrat);
+    font-size: 15px;
+    color: hsl(200, 20%, 17%);
+    line-height: 1.5;
+
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+    margin: 1rem;
+}
+
+.wrapper {
+    display: grid;
+    background: hsl(230, 5%, 80%);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    place-content: center;
+    align-items: center;
+}
+
+.title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: var(--fw-700);
+}
+
+.rounds {
+    text-align: center;
+    font-weight: var(--fw-600);
+}
+
+.score-row {
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.score-row > * {
+    font-weight: var(--fw-500)
+}
+
+.button-container {
+    padding: 1.5rem;
+    display: grid;
+    gap: .75rem;
+}
+
+.button-container > button {
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.winner {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: var(--fw-700);
+}
+
+.play-again {
+    display: block;
+    margin: 20px auto;
+    padding: .5rem 2rem;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.round-choices, .round-result {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: var(--fw-600);
+}
+
+.attribution { font-size: .75rem; text-align: center; margin-top: .75rem;}
+.attribution a { color: hsl(228, 45%, 44%); }

@@ -44,7 +44,7 @@ function playRound(playerChoice, computerChoice){
     if (!roundChoices){
         roundChoices = document.createElement('h3');
         roundChoices.className = 'round-choices';
-        document.body.appendChild(roundChoices);
+        document.querySelector('.wrapper').appendChild(roundChoices);
     }
     roundChoices.textContent = `Player Chose: ${playerChoice}  |  Computer Chose: ${computerChoice}`;
 
@@ -52,7 +52,7 @@ function playRound(playerChoice, computerChoice){
     if (!roundResult){
         roundResult = document.createElement('h3');
         roundResult.className = 'round-result';
-        document.body.appendChild(roundResult);
+        document.querySelector('.wrapper').appendChild(roundResult);
     } 
     roundResult.textContent = result;
 
@@ -68,12 +68,12 @@ function playRound(playerChoice, computerChoice){
         const winnerMessage = document.createElement('h2');
         winnerMessage.className = 'winner';
         winnerMessage.textContent = "Congratulations!";
-        document.body.appendChild(winnerMessage);
+        document.querySelector('.wrapper').appendChild(winnerMessage);
         
         const playAgainButton = document.createElement('button');
         playAgainButton.className = 'play-again';
         playAgainButton.textContent = "Play Again";
-        document.body.appendChild(playAgainButton);
+        document.querySelector('.wrapper').appendChild(playAgainButton);
         
         resetGame();
     }
@@ -81,12 +81,12 @@ function playRound(playerChoice, computerChoice){
         const winnerMessage = document.createElement('h2');
         winnerMessage.className = 'winner';
         winnerMessage.textContent = "Better luck next time!";
-        document.body.appendChild(winnerMessage);
+        document.querySelector('.wrapper').appendChild(winnerMessage);
         
         const playAgainButton = document.createElement('button');
         playAgainButton.className = 'play-again';
         playAgainButton.textContent = "Play Again";
-        document.body.appendChild(playAgainButton);
+        document.querySelector('.wrapper').appendChild(playAgainButton);
 
         resetGame();
     }
